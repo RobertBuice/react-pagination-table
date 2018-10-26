@@ -1,7 +1,7 @@
 {
-  "name": "react-pagination-table",
+  "name": "filterable-react-pagination-table",
   "version": "2.0.2",
-  "description": "A table component for React with pagination",
+  "description": "A fork of react-pagination-table",
   "main": "./lib/index.js",
   "scripts": {
     "test:watch": "cross-env NODE_ENV=test ./node_modules/.bin/mocha -w --opts __test__/.mocharc __test__/",
@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/addhome2001/react-pagination-table.git"
+    "url": "git+https://github.com/RobertBuice/react-pagination-table.git"
   },
   "keywords": [
     "react",
@@ -58,6 +58,7 @@
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-pagination-status": "^2.0.0",
+    "filterable-react-pagination-status": "^2.0.0",
     "sinon": "^1.17.5",
     "webpack": "^2.2.1",
     "snyk": "^1.41.1"
@@ -78,6 +79,5 @@
     "mocha": "^3.0.2",
     "react-test-renderer": "^16.2.0",
     "webpack-dev-server": "^2.3.0"
-  },
-  "snyk": true
+  }
 }
