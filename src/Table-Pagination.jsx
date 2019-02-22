@@ -57,6 +57,13 @@ export default class TablePagination extends Component
     this.handleChangePage = this.handleChangePage.bind(this);
   }
 
+  componentWillReceiveProps(props: TablePaginationProps) {
+    this.setState({
+      activePage: 0,
+      pageCount: Math.ceil(props.totalCount / props.perPageItemCount),
+    }) 
+  }
+
   handleChangePage(status: number): void {
     this.setState({
       activePage: status,
